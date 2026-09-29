@@ -1,0 +1,105 @@
+# =====================================================================
+# AI Himawari Forecasting - Git Ignore Configuration
+# =====================================================================
+
+# --- Datasets & Raw Satellite NetCDF Data ---
+# Heavy NetCDF files and dataset folders should NEVER be pushed to GitHub
+data/
+**/data/
+*.nc
+*.nc4
+*.netcdf
+*.h5
+*.hdf5
+.load_cache/
+**/.load_cache/
+
+# --- Experiment Outputs & Generated Artifacts ---
+# Model checkpoints, forecast grids, plots, reports, PPTX, GIF, CSV, JSON
+outputs/
+**/outputs/
+*.joblib
+*.pkl
+*.pickle
+*.npy
+*.npz
+*.pptx
+*.gif
+
+# Exclude generated metrics/summaries inside outputs if placed outside
+summary/
+forecast/
+classification/
+evaluation/
+visualization/
+
+# --- Dump / Large Unrelated Files ---
+graphql.json
+**/graphql.json
+ai_himawari/
+
+# --- Python Environment & Bytecode ---
+__pycache__/
+**/__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Distribution / packaging
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# --- IDEs & Editors ---
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+*.sublime-project
+*.sublime-workspace
+
+# --- Operating System Files ---
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+[Dd]esktop.ini
+
+# --- Jupyter Notebooks & Caches ---
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
+# --- Logs & Diagnostics ---
+*.log
+logs/
+**/logs/
+
+# --- Scratch & Temporary Files ---
+scratch/
+tmp/
+temp/

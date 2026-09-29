@@ -1,0 +1,19 @@
+# Core Scientific Computing
+numpy>=1.23.0
+scipy>=1.9.0
+pandas>=1.5.0
+
+# Machine Learning & Modeling
+scikit-learn>=1.2.0
+joblib>=1.2.0
+
+# Satellite & Geospatial Data Processing
+xarray>=2023.1.0
+netCDF4>=1.6.0
+h5netcdf>=1.1.0
+geopandas>=0.13.0
+shapely>=2.0.0
+
+# Visualization & Image Generation
+matplotlib>=3.7.0
+Pillow>=9.5.0
