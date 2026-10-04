@@ -21,6 +21,9 @@ from models.ann import ANNModel
 from models.base import BaseModel
 from models.gaussian_process import GaussianProcessModel
 from models.gradient_boosting import GradientBoostingModel
+from models.xgboost_model import XGBoostModel
+from models.lightgbm_model import LightGBMModel
+from models.catboost_model import CatBoostModel
 
 logger = logging.getLogger(__name__)
 
@@ -28,6 +31,9 @@ _REGISTRY: dict[str, type[BaseModel]] = {
     "ann": ANNModel,
     "gradient_boosting": GradientBoostingModel,
     "gaussian_process": GaussianProcessModel,
+    "xgboost": XGBoostModel,
+    "lightgbm": LightGBMModel,
+    "catboost": CatBoostModel,
 }
 
 
